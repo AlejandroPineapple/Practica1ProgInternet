@@ -1,4 +1,41 @@
-h1 {
-    font-family: 'Nabla', system-ui;
+body {
+    background-color: black;
+    font-family:  sans-serif;
     color: aliceblue;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Nabla';
+    color: white;
+}
+
+p {
+    font-size: 18px;
+}
+
+a {
+    color: lightblue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: aqua;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.imagenes img {
+    width: 800px;
+    margin: 0 10px;
+    border-radius: 10px;
 }

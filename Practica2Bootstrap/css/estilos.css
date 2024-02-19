@@ -1,5 +1,6 @@
 .center {
     text-align: center;
+    align-items: center;
 }
 
 .big {
@@ -10,4 +11,18 @@
 
 .right {
     text-align: end;
+}
+
+.bigimage {
+    width: 550px;
+    height: auto;
+    text-align: center;
+}
+
+
+#featureimage{
+    width: 620px;
+    padding: 0 0 0 15px;
+    margin: 20px 0;
+    text-align:center;
 }

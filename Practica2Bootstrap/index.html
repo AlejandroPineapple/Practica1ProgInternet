@@ -4,63 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet"  href="css/estilos.css">
     <script src="https://kit.fontawesome.com/5427a8276f.js" crossorigin="anonymous"></script>
-    <title> Bootstrap </title>
+    <title> No me juzgue profe </title>
 </head>
 <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">WUUUU</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarColor02">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Home
-                  <span class="visually-hidden">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Hola</a>
-                  <a class="dropdown-item" href="#">Soy lo maximo</a>
-                  <a class="dropdown-item" href="#">Mejor que todos</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Separated link</a>
-                </div>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-sm-2" type="search" placeholder="Search">
-              <button class="btn btn-secondary my-2 my-sm-0" type="submit"><i class="fa-solid fa-hippo"></i> Search</button>
-            </form>
-          </div>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Para mi ex</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Hola
+                <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Como estas</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Yo</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">se que</a>
+                <a class="dropdown-item" href="#">me </a>
+                <a class="dropdown-item" href="#">extrañas</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Profe puedo explicarlo</a>
+              </div>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-sm-2" type="search" placeholder="Search">
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit"><i class="fa-solid fa-hippo"></i> Search</button>
+          </form>
         </div>
-      </nav>
-      <section class="bg-dark text-light p-5 text-center text-sm-start my-5">
-        <div class="container-fluid">
-          <div class="d-sm-flex align-items-center justify-content-between">
-            <div>
-            <h2> Ya me quiero <span class="text-warning"> iiiiiiiiir </span></h2>
-            <p class="lead my-4 p-1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. audantium recusandae. Optio.</p>
-            <button class="btn btn-warning btn-lg"> cosas xd </button>
-            </div>
-            <img src="./img/react.svg" alt="" class="img-fluid w-50 d-none d-sm-block > 
-          </div>
+      </div>
+    </nav>
+      <section class="bg-dark text-light p-5 text-center text-sm-start">
+        <div class="container-fluid center">
+            <h2> Quieres regresar <span class="text-warning"> conmigo ????? </span></h2>
+            <img src="img/kuromi.png" alt=""  > 
+        </div>
+        <div class="container center">
+          <button class="btn btn-secondary btn-lg big"> Claro que si guapo </button>
+          <button class="btn btn-warning btn-lg big" id="move-randomly"> No, me das asco </button>
         </div>
       </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
+<script>
+  window.onload = (()=>{
+      let move = document.querySelector("#move-randomly");
+      move.addEventListener("mouseover", function(e) {
+          console.log(move);
+          let min = 5;
+          move.style.position = "absolute";
+          move.style.left = (Math.random() * (window.screen.width - min) + min) + "px";
+          move.style.top = (Math.random() * (window.screen.height - min) + min) + "px";
+          
+      });
+  })
+</script>
 </html>

@@ -5,20 +5,38 @@
     box-sizing: 0;
 }
 
-.bigNav
-{
-    font-size: 2vw;
-}
-
 h1
 {
     font-size: 5vw;
+    text-align: center;
+}
+
+h2
+{
+    font-size: 2.5vw;
+}
+
+p
+{
+    font-size: 2vw;
 }
 
 section
 {
     width: 100%;
-    height: 1500px;
+    height: 150px;
+}
+
+img
+{
+    width: 800px;
+    height: auto;
+    max-width: 80vw;
+}
+
+.bigNav
+{
+    font-size: 1.7vw;
 }
 
 .mt-0 
@@ -26,7 +44,73 @@ section
     margin-top: 5vw !important;
 }
 
-#musica
+.left
 {
-    width: 100vw;
+    text-align: left !important;
 }
+
+.right
+{
+    text-align: right !important;
+}
+
+.album
+{
+    width: 25vw !important;
+    height: auto !important;
+}
+
+.redondito
+{
+    border-radius: 20% !important;
+}
+
+.chunky .modal-dialog
+{
+    width: 1000px;
+    max-width: 80%;
+    max-height: fit-content;
+    display: flex;
+}
+
+.songs
+{
+    font-size: 2vh;
+}
+
+.songs-container
+{
+    display: flex;
+    justify-content: center;
+}
+
+.modal-album
+{
+    width: 500px;
+    height: auto;
+    max-width: 50vw;
+}
+
+.icons
+{
+    width: 500px;
+    height: auto;
+    max-width: 5vw;
+}
+
+#bienvenida
+{
+    background-color: rgb(10, 10, 10);
+}
+
+#pina
+{
+    width: 5vw;
+    height: auto;
+}
+
+#main-container {
+    position: relative;
+    z-index: 1; 
+}
+

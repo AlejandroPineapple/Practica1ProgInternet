@@ -8,13 +8,13 @@
 
 h1
 {
-    font-size: 5vw;
-    text-align: center;
+    font-size: 4vw;
+    text-align: justify;
 }
 
 h2
 {
-    font-size: 2.5vw;
+    font-size: 3vw;
 }
 
 p
@@ -33,6 +33,17 @@ img
     width: 800px;
     height: auto;
     max-width: 80vw;
+}
+
+
+.review-text
+{
+    font-size: 2vw;
+}
+
+.review
+{
+    margin-bottom: 15vh;
 }
 
 .bigNav
@@ -153,11 +164,6 @@ img
     max-width: 50vw;
 }
 
-.review-text
-{
-    font-size: 1.75;
-}
-
 #bienvenida
 {
     background-color: rgb(10, 10, 10);
@@ -173,4 +179,3 @@ img
     position: relative;
     z-index: 1; 
 }
-

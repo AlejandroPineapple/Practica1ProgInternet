@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: 0;
+    font-family: "Sen";
 }
 
 h1
@@ -39,6 +40,11 @@ img
     font-size: 1.7vw;
 }
 
+.textofooter
+{
+    font-size: 1.5vw;
+}
+
 .mt-0 
 {
     margin-top: 5vw !important;
@@ -58,11 +64,33 @@ img
 {
     width: 25vw !important;
     height: auto !important;
+    transition: all 100ms ease-in-out;
+}
+
+.album:hover
+{
+    scale: 1.2 !important;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in;
+}
+
+.pelicula
+{
+    width: 30vw !important;
+    height: auto !important;
+    transition: all 100ms ease-in-out;
+}
+
+.pelicula:hover
+{
+    scale: 1.2 !important;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in;
 }
 
 .redondito
 {
-    border-radius: 20% !important;
+    border-radius: 9% !important;
 }
 
 .chunky .modal-dialog
@@ -88,7 +116,19 @@ img
 {
     width: 500px;
     height: auto;
-    max-width: 50vw;
+    max-width: 40vw;
+}
+
+.playlist
+{
+    transition: all 100ms ease-in-out;
+}
+
+.playlist:hover
+{
+    scale: 1.09 !important;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in;
 }
 
 .icons
@@ -96,6 +136,21 @@ img
     width: 500px;
     height: auto;
     max-width: 5vw;
+    transition: all 100ms ease-in-out;
+}
+
+.icons:hover
+{
+    scale: 1.2 !important;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in;
+}
+
+.fotos
+{
+    width: 500px;
+    height: auto;
+    max-width: 50vw;
 }
 
 #bienvenida
